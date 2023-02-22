@@ -1,19 +1,28 @@
-let scoreEl =  document.querySelectorAll('.score')
+let score0 = document.querySelector('#score--0')
+let score1 = document.querySelector('#score--1')
 
+let btnNew = document.querySelector('.btn--new')
+let player0 = document.querySelector('.player--0')
+let player1 = document.querySelector('.player--1')
 let dice = document.querySelector('.dice')
-let resetEl = document.querySelector('.btn--new')
+let current = document.querySelector('#current--0')
 
-resetEl.addEventListener('click',function (){
-    scoreEl[0].textContent = 0
-    scoreEl[1].textContent = 0
-    dice.classList.add('hide')
+function reset(){
+    score0.textContent = 0
+    score1.textContent = 0
+    player0.classList.add('player--active')
+    player1.classList.remove('player--active')
+    dice.classList.add('hidden')
+}
+btnNew.addEventListener('click',reset)
+
+let rollBtn = document.querySelector('.btn--roll')
+let currentScore = 0
+rollBtn.addEventListener('click',function (){
+    dice.classList.remove('hidden')
+    let randInt = Math.floor(Math.random()*6+1)
+    currentScore+=randInt
+    current.textContent = currentScore
     
-})
-
-let roll = document.querySelector('.btn--roll')
-roll.addEventListener('click',function (){
-    let randomNumber = Math.floor(Math.random() * 6) + 1
-    dice.classList.remove('hide')
-    dice.src = 'dice-'+randomNumber+'.png'
-
+    dice.src = 'dice-'+randInt+'.png'
 })
