@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.player{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.player-image img {
+    --width:20rem;
+    width: var(--width);
+    height: var(--width);
+    border-radius: 20px;
+}
+.player-song{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.player-song-title{
+    font-size: x-large;
+}
+.player-time-range{
+    width: 100%;
+
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.player-control{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+.red{
+    color: red;
+}
+.fa-play:hover{
+    scale:2;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <div class="player">
+        <div class="player-image">
+            <img src="https://i.scdn.co/image/ab67616d0000b27343c07443e2c8fafe0465ca9e" alt="">
+        </div>
+        <div class="player-song">
+            <div class="player--left">
+                <h3 class="player-song-title">
+                    Stay
+                </h3>
+                <p class="player-song-singer">
+                    Kid laroi & Justin Beiber
+                </p>
+            </div>
+            <div class="player--right">
+                <i class="fa-solid fa-heart red" id="heart"></i>
+            </div>
+        </div>
+        <div class="player-time">
+            <input type="range" class="player-time-range" min="0" max="3" step="0.1">
+            <div class="container">
+                <div class="player-time--left">
+                    0:00
+                </div>
+            
+                <div class="player-time--right">
+                    3:00
+                </div>
+            </div>
+            
+        </div>
+        <div class="player-control">
+                <i class="fa-solid fa-random"></i>
+                <i class="fa-solid fa-step-backward"></i>
+                <i class="fa-solid fa-play"></i>
+                <i class="fa-solid fa-step-forward"></i>
+                <i class="fa-solid fa-repeat"></i>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
