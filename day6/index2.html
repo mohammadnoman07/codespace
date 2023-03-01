@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="" id="currency">
+                    
+        <option value="$">$ dollaor </option>
+        <option value="₹">₹ Rupees</option>
+        <option value="¥">¥ Yuan</option>
+        <option value="₽">₽ Ruble</option>
+        <option value="€">€ Euro</option>
+    </select>
+    <input id="pi_input" type="range"  step="1" />
+    <p>Value: <output id="value"></output></p>
+    <script>
+     const value = document.querySelector("#value")
+    const input = document.querySelector("#pi_input")
+    value.textContent = input.value
+    input.addEventListener("input", (event) => {
+    console.log(event.target.value)
+    value.textContent = event.target.value
+    })
+    const currency = document.querySelector("#currency")
+    currency.addEventListener('change',(e) =>{
+        console.log(e.target.value)
+    })
+    
+    console.log(currency.options[currency.selectedIndex].value)
+
+
+    </script>
+</body>
+</html>
