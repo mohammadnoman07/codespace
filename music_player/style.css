@@ -47,6 +47,6 @@ body{
 .red{
     color: red;
 }
-.fa-play:hover{
+#playBtn:hover{
     scale:2;
 }

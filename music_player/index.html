@@ -10,6 +10,7 @@
     
 </head>
 <body>
+    
     <div class="player">
         <div class="player-image">
             <img src="https://i.scdn.co/image/ab67616d0000b27343c07443e2c8fafe0465ca9e" alt="">
@@ -27,6 +28,7 @@
                 <i class="fa-solid fa-heart red" id="heart"></i>
             </div>
         </div>
+        <audio ></audio>
         <div class="player-time">
             <input type="range" class="player-time-range" min="0" max="3" step="0.1">
             <div class="container">
@@ -42,9 +44,9 @@
         </div>
         <div class="player-control">
                 <i class="fa-solid fa-random"></i>
-                <i class="fa-solid fa-step-backward"></i>
-                <i class="fa-solid fa-play"></i>
-                <i class="fa-solid fa-step-forward"></i>
+                <i class="fa-solid fa-step-backward" id="prevBtn"></i>
+                <i class="fa-solid fa-play" id="playBtn"></i>
+                <i class="fa-solid fa-step-forward" id="nextBtn"></i>
                 <i class="fa-solid fa-repeat"></i>
         </div>
 
