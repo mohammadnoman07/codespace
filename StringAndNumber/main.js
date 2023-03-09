@@ -6,7 +6,6 @@ console.log(str.length)
 console.log(str.charAt(4))
 
 console.log(str[4])
-
 //Returns the Unicode value of the character at the specified location.
 console.log(str.charCodeAt(0))
 console.log(str.charCodeAt(10))
@@ -22,10 +21,13 @@ console.log(str.concat(" qwerty"))
 //Returns true if the sequence of elements of searchString converted to a String is the same as the corresponding elements of this object (converted to a String) 
 //starting at endPosition – length(this). Otherwise returns false.
 console.log(str.endsWith("hello World"))
+// substring of a num 1234
+
+// 1,2,3,4,12,13,14,23,123,24,234,1234,34
 
 //Returns true if searchString appears as a substring of the result of converting this object to a String, at one or more positions that are greater
 // than or equal to position; otherwise, returns false.
-console.log(str.includes('hell'))
+console.log(str.includes('hel'))
 
 console.log(str.indexOf("ll"))
 
@@ -46,4 +48,7 @@ console.log(str.slice())
 console.log(str.startsWith(" "))
 
 
+const num = 1234
+
+num.toString()
 
